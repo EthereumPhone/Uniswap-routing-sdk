@@ -24,13 +24,13 @@ class MainActivity : ComponentActivity() {
             web3RPC = "YOUR_WEB3_RPC_URL_HERE"
         )
 
-        // Create dai token for output
+            // Create dai token for output
         val daiToken = Token(
-            1,
-            "0x6b175474e89094c44da98b954eedeac495271d0f",
-            18,
-            "DAI",
-            "Dai Stablecoin"
+            chainId = 1,
+            address = "0x6b175474e89094c44da98b954eedeac495271d0f",
+            decimals = 18,
+            symbol = "DAI",
+            name = "Dai Stablecoin"
         )
 
         uniswapSDK.getCalldata(
